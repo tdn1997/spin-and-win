@@ -1,0 +1,34 @@
+; Engine configuration file.
+; Prefer editing with Godot 4.x when possible.
+
+config_version=5
+
+[application]
+
+config/name="spin-and-win"
+run/main_scene="res://scenes/main_menu.tscn"
+config/features=PackedStringArray("4.2", "Mobile")
+config/icon="res://assets/Slot Machine/slot-symbol1.png"
+
+[autoload]
+
+GameManager="*res://scripts/game_manager.gd"
+AudioManager="*res://scripts/audio_manager.gd"
+
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=1280
+window/handheld/orientation=1
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray()
+
+[rendering]
+
+renderer/rendering_method="mobile"
+textures/canvas_textures/default_texture_filter=0
+
